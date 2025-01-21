@@ -9266,7 +9266,7 @@
 		)
 		(uuid "538c4189-52b2-48a1-b39d-02ef3f86e3e8")
 	)
-	(text_box "On later versions, pin 20 of the header is clipped off to provide alignment and polarization.  On earlier versions it's a ground.  The difference is irrelevant for this circuit."
+	(text_box "On later versions, pin 20 of the header on the motherboard is clipped off to provide alignment and polarization.  On earlier versions it's a ground.  The difference is irrelevant for this circuit."
 		(exclude_from_sim no)
 		(at 181.61 127 0)
 		(size 43.1963 11.3721)
@@ -9287,7 +9287,6 @@
 	)
 	(label "A9"
 		(at 130.81 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9298,7 +9297,6 @@
 	)
 	(label "D3"
 		(at 205.74 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9309,7 +9307,6 @@
 	)
 	(label "D5"
 		(at 193.04 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9320,7 +9317,6 @@
 	)
 	(label "SCL"
 		(at 95.25 144.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9331,7 +9327,6 @@
 	)
 	(label "~{WR}"
 		(at 130.81 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9342,7 +9337,6 @@
 	)
 	(label "~{ACT}"
 		(at 147.32 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9353,7 +9347,6 @@
 	)
 	(label "A2"
 		(at 205.74 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9364,7 +9357,6 @@
 	)
 	(label "A3"
 		(at 205.74 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9375,7 +9367,6 @@
 	)
 	(label "A9"
 		(at 193.04 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9386,7 +9377,6 @@
 	)
 	(label "A5"
 		(at 193.04 82.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9397,7 +9387,6 @@
 	)
 	(label "A1"
 		(at 193.04 74.93 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9408,7 +9397,6 @@
 	)
 	(label "D5"
 		(at 130.81 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9419,7 +9407,6 @@
 	)
 	(label "A10"
 		(at 205.74 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9430,7 +9417,6 @@
 	)
 	(label "PD6"
 		(at 130.81 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9441,7 +9427,6 @@
 	)
 	(label "A6"
 		(at 130.81 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9452,7 +9437,6 @@
 	)
 	(label "A7"
 		(at 130.81 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9463,7 +9447,6 @@
 	)
 	(label "A11"
 		(at 205.74 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9474,7 +9457,6 @@
 	)
 	(label "A11"
 		(at 228.6 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9485,7 +9467,6 @@
 	)
 	(label "~{RESET}"
 		(at 205.74 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9496,7 +9477,6 @@
 	)
 	(label "D0"
 		(at 193.04 95.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9507,7 +9487,6 @@
 	)
 	(label "~{RD}"
 		(at 130.81 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9518,7 +9497,6 @@
 	)
 	(label "PD7"
 		(at 130.81 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9529,7 +9507,6 @@
 	)
 	(label "A3"
 		(at 130.81 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9540,7 +9517,6 @@
 	)
 	(label "PD6"
 		(at 228.6 49.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9551,7 +9527,6 @@
 	)
 	(label "A8"
 		(at 130.81 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9562,7 +9537,6 @@
 	)
 	(label "D7"
 		(at 205.74 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9573,7 +9547,6 @@
 	)
 	(label "~{RESET}"
 		(at 147.32 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9584,7 +9557,6 @@
 	)
 	(label "~{WR}"
 		(at 143.51 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9595,7 +9567,6 @@
 	)
 	(label "D3"
 		(at 228.6 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9606,7 +9577,6 @@
 	)
 	(label "A2"
 		(at 228.6 74.93 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9617,7 +9587,6 @@
 	)
 	(label "PD7"
 		(at 228.6 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9628,7 +9597,6 @@
 	)
 	(label "D6"
 		(at 205.74 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9639,7 +9607,6 @@
 	)
 	(label "A10"
 		(at 130.81 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9650,7 +9617,6 @@
 	)
 	(label "PD5"
 		(at 130.81 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9661,7 +9627,6 @@
 	)
 	(label "A4"
 		(at 130.81 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9672,7 +9637,6 @@
 	)
 	(label "D2"
 		(at 130.81 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9683,7 +9647,6 @@
 	)
 	(label "D7"
 		(at 228.6 107.95 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9694,7 +9657,6 @@
 	)
 	(label "~{ACT}"
 		(at 130.81 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9705,7 +9667,6 @@
 	)
 	(label "D0"
 		(at 130.81 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9716,7 +9677,6 @@
 	)
 	(label "D2"
 		(at 228.6 97.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9727,7 +9687,6 @@
 	)
 	(label "A7"
 		(at 205.74 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9738,7 +9697,6 @@
 	)
 	(label "~{RESET}"
 		(at 228.6 115.57 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9749,7 +9707,6 @@
 	)
 	(label "A4"
 		(at 193.04 80.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9760,7 +9717,6 @@
 	)
 	(label "A6"
 		(at 228.6 82.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9771,7 +9727,6 @@
 	)
 	(label "PSEN"
 		(at 228.6 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9782,7 +9737,6 @@
 	)
 	(label "D6"
 		(at 130.81 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9793,7 +9747,6 @@
 	)
 	(label "A7"
 		(at 228.6 85.09 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9804,7 +9757,6 @@
 	)
 	(label "D1"
 		(at 130.81 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9815,7 +9767,6 @@
 	)
 	(label "A2"
 		(at 130.81 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9826,7 +9777,6 @@
 	)
 	(label "D4"
 		(at 130.81 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9837,7 +9787,6 @@
 	)
 	(label "D2"
 		(at 205.74 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9848,7 +9797,6 @@
 	)
 	(label "D4"
 		(at 193.04 102.87 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9859,7 +9807,6 @@
 	)
 	(label "PSEN"
 		(at 140.97 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9870,7 +9817,6 @@
 	)
 	(label "A1"
 		(at 130.81 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9881,7 +9827,6 @@
 	)
 	(label "D6"
 		(at 228.6 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9892,7 +9837,6 @@
 	)
 	(label "SDA"
 		(at 95.25 142.24 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9903,7 +9847,6 @@
 	)
 	(label "A8"
 		(at 193.04 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9914,7 +9857,6 @@
 	)
 	(label "A0"
 		(at 193.04 72.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9925,7 +9867,6 @@
 	)
 	(label "A0"
 		(at 130.81 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9936,7 +9877,6 @@
 	)
 	(label "~{RESET}"
 		(at 130.81 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9947,7 +9887,6 @@
 	)
 	(label "~{RD}"
 		(at 143.51 132.08 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9958,7 +9897,6 @@
 	)
 	(label "~{RD}"
 		(at 193.04 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9969,7 +9907,6 @@
 	)
 	(label "D-"
 		(at 35.56 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9980,7 +9917,6 @@
 	)
 	(label "~{WR}"
 		(at 193.04 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9991,7 +9927,6 @@
 	)
 	(label "A3"
 		(at 228.6 77.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10002,7 +9937,6 @@
 	)
 	(label "D3"
 		(at 130.81 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10013,7 +9947,6 @@
 	)
 	(label "D7"
 		(at 130.81 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10024,7 +9957,6 @@
 	)
 	(label "A5"
 		(at 130.81 149.86 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10035,7 +9967,6 @@
 	)
 	(label "A10"
 		(at 228.6 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10046,7 +9977,6 @@
 	)
 	(label "D+"
 		(at 35.56 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10057,7 +9987,6 @@
 	)
 	(label "A6"
 		(at 205.74 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10068,7 +9997,6 @@
 	)
 	(label "PD5"
 		(at 228.6 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10079,7 +10007,6 @@
 	)
 	(label "PSEN"
 		(at 205.74 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10090,7 +10017,6 @@
 	)
 	(label "D1"
 		(at 193.04 97.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10101,7 +10027,6 @@
 	)
 	(label "A11"
 		(at 130.81 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
