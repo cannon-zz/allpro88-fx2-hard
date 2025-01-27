@@ -62,11 +62,11 @@ There are two options for the USB connection to the PCB:  a footprint for a USB 
 
 For the rear panel, I bought a USB 2.0 type B break-out board.  The shell of a USB 2.0 type B connector is almost exactly the height of the shell of the DB36 connector removed from the rear panel, and fits nicely into the space left by the connector.  I prefer the larger USB connectors, they're more resilient.  We're not sending this stupid thing into space, use a big connector.  To install it in the hole, I bought a piece of 90 degree aluminum angle extrusion at a local hobby shop.  I cut it to a suitable length with a hack saw, and then used a drill, a small file, and lots of patience to carve out holes and notches for the USB connector and its break-out board.  I reused the original screws from the DB36 connector to mount the aluminum angle into the ALLPRO88 case.
 
-![Rear panel USB connector assembly detail](photos/rear_panel_usb_1.jpg)
-![Rear panel USB connector assembly detail](photos/rear_panel_usb_2.jpg)
-![Rear panel USB connector assembly detail](photos/rear_panel_usb_3.jpg)
-![Rear panel USB connector assembly detail](photos/rear_panel_usb_4.jpg)
-![Rear panel USB connector assembly detail](photos/rear_panel_usb_5.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_port_1.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_port_2.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_port_3.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_port_4.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_port_5.jpg)
 
 Just a little blue paint, and it would look like it was always that way.
 
