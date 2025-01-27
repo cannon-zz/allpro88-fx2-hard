@@ -30,9 +30,13 @@ Because of the design of the FX2LP's GPIO scripting system, the data bus must be
 
 The FX2LP is 5 V tolerant, so no level shifting circuitry is required.  However, the ALLPRO88's motherboard has a pair of resistor array chips acting as bus terminators for the 36 conductor interface cable.  They're two orange DIP packages next to the pin header for the cable.  I believe these need to be removed from the motherboard, because they put too great a load on the FX2LP's I/O pins.  I believe they need to be removed, but don't know that for certain.  I removed them from my unit early during the development of this circuit because I couldn't get it to work and after some math decided those resistors were screwing it up, but I'm surprised that would be the case, I'm surprised they wouldn't have caused problems for the original ISA interface if that was true, so I don't know.  Removing them didn't fix the problems I was having, but I've never tried with them re-installed so I don't know what happens.  What is definitely true is that those bus terminators are not needed:  there is no bus to terminate, only a few centimetres of PCB traces connect the FX2LP to the chips on the motherboard.  They're also too close to the pin header onto which the interface board mounts and they interfere with the board if they're left.  I strongly recommend removing them.
 
+![Bus termination resistors interfering with controller PCB.](photos/resistor_arrays_need_to_go.jpg)
+
 ### Power
 
 5 V and GND are available on the usual pins of those DIP resistor array packages, so after removing them that provides a convenient source of power for the interface board.  I suggest soldering a pair of wires into the appropriate holes and running them to a connector.  This is the best option, because it ensures the FX2 runs through a hardware reset sequence when the the ALLPRO88 is turned on, and correctly indicates to the host when the USB device is active and when it isn't.
+
+![Recommended power connection](photos/power_siphon.jpg)
 
 If you choose to build this using a USB logic analyzer board as-is, those boards are powered by the USB bus.  I think that's probably OK, I think it's safe to power the FX2LP chip and, possibly, drive the ALLPRO88's bus interface while the ALLPRO88 is off (that could have happened in the old days with the ISA interface driving a powered-off programmer), but the firmware will need to be modified in that case because it expects the WAKEUP pin to be monitoring USB VBUS.  That connection isn't made on those boards, so the firmware will believe the USB cable is disconnected and will turn off the USB interface.
 
