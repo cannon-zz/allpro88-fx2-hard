@@ -44,6 +44,8 @@ Instead of modifying the firmware, another option if using a USB logic analyzer 
 
 ## Assembly
 
+![Top view of partially assembled PCB](photos/controller_1.jpg)
+
 ### Parts Source
 
 If you have a hot air soldering station, the cheapest way to build one of these is to order a USB logic analyzer and salvage the parts from it.  Almost all of the required parts can be obtained from one of those boards, they can be had for well under $10 delivered, whereas the FX2LP part, alone, is more than $20 from Mouser (with delivery extra).  Without a hot air station removing the parts without damaging them will be very difficult.  In that case just buy them all new.  (the price difference doesn't come close to justifying buying a hot air station, but if you were thinking of getting one anyway maybe this is the time).
@@ -55,6 +57,8 @@ Install the FX2LP first.  Hand-soldering it requires patience, and the more spac
 ### ALLPRO88 Connection
 
 Two footprints are provided for a female pin header connector for the connection to the ALLPRO88 motherboard.  One option is a TE Connectivity 532956-6.  This is not cheap, but matches the style of the connectors used on the other boards in the system.  An alternative footprint is available for a standard, cheaper, right-angle female header connector as you'd find when doing a search for such things.
+
+![Controller mounted](photos/controller_2.jpg)
 
 ### USB Connection
 
@@ -80,5 +84,7 @@ I2C and GPIO headers.  These can be left unpopulated.  It's hard to find connect
 DO NOT connect the module to the ALLPRO88 bus interface before writing the proper firmware to the EEPROM.  Apply power to the board and see if looks OK.  If it hasn't caught fire, and the 3.3 V test point shows the correct voltage, plug it into your computer and see what it shows up as.  If you salvaged parts from a USB logic analyzer board it'll probably show up as that, otherwise it'll probably show up as an FX2 chip in its raw state.  Either way that tells you it's working.  Write the firmware to the EEPROM, then power cycle it and it should report itself as an ALLPRO88 USB interface.
 
 NOW you can plug it into the ALLPRO88's motherboard.  With the controller installed, turn on the ALLPRO88.  The "BUSY" light on the socket module should briefly blink.  When the controller is turned on, it enables the main power supply and runs through a channel scan to determine which pin driver modules are installed.  That process is the BUSY light blinking.  If you don't see the light blink once, briefly, probably something's wrong.
+
+![Controller installed](photos/controller_2.jpg)
 
 If, when you apply power, the BUSY light comes on and stays on, turn off the ALLPRO88.  That almost certainly indicates the !RESET line is not being driven properly.  That needs to be diagnosed and fixed before moving on.  When its interface bus is floating, the ALLPRO88 powers up with the main power supplies active.  I don't know why, it doesn't seem wise, it can potentially damage the circuitry, but that's the design.  !RESET must be asserted to clear that state.  The controller circuit has a pull-down resistor on !RESET to ensure it's held in the asserted state until the FX2 firmware has booted and can take control, so if your BUSY light is on and won't turn off it means that the pull-down resistor is not doing what it's supposed to do and also that the FX2 firmware is not starting and doing what it needs to do.  Both are serious problems that need to be rectified.
