@@ -44,15 +44,35 @@ Instead of modifying the firmware, another option if using a USB logic analyzer 
 
 ## Assembly
 
-If you have a hot air soldering station, the cheapest way to build one of these is to order a USB logic analyzer and salvage the parts from it.  They can be had for well under $10 delivered, whereas the FX2LP part, alone, is more than $20 from Mouser (with delivery extra).  Without a hot air station removing the parts without damaging them will be very difficult.  In that case just buy them all new.  (the price difference doesn't come close to justifying buying a hot air station, but if you were thinking of getting one anyway maybe this is the time).
+### Parts Source
 
-Install the FX2LP first.  Hand-soldering it requires patience, and the more space you have to work the more patient you'll be, so it's best if there's not yet other stuff on the board.
+If you have a hot air soldering station, the cheapest way to build one of these is to order a USB logic analyzer and salvage the parts from it.  Almost all of the required parts can be obtained from one of those boards, they can be had for well under $10 delivered, whereas the FX2LP part, alone, is more than $20 from Mouser (with delivery extra).  Without a hot air station removing the parts without damaging them will be very difficult.  In that case just buy them all new.  (the price difference doesn't come close to justifying buying a hot air station, but if you were thinking of getting one anyway maybe this is the time).
 
-There are two options for the USB interface:  a footprint for a USB connector, and a footprint for directly soldering in a USB cable.  This is not the connection the cable from the host PC plugs into, this is for an internal connection within the ALLPRO88 from the interface board to the USB connector on the rear panel (where the cable to the host connects to).  The directly-soldered-cable option is less likely to become a point of failure in the future, but it means the interface board cannot be removed from the chassis without unscrewing the USB connector plate from the rear panel.  That can become inconvenient.  I initially soldered a cable directly to the board, then later decided I preferred having a connector I can pull a cable out of.
+### Soldering Tips
 
-I2C and GPIO headers.  These can be left unpopulated.  It's hard to find connectors that fit into the pin pitch I chose.  That's my bad.  They're not used for anything, they're just there in case somebody wants to play with them in the future.  There are three spare GPIO lines on port D that get routed to J8, along with 3.3 V and GND.  The FX2's I2C clock and data lines, and 3.3 V and GND, are routed to J1.  The ALLPRO88's socket module connectors have many unused pins on them, and one could jumper these signals from the controller board to unused pins on the socket module connectors on the ALLPRO88's motherboard, thereby making them available to custom socket modules.  A little I2C display could be added to show status messages, for example.
+Install the FX2LP first.  Hand-soldering it requires patience, and the more space you have to work the more patient you'll be, so it's best if there's not yet other stuff on the board.  Get a magnifying glass and check each pin of the chip one-by-one to make sure solder has flowed onto it and onto the pad, and hasn't bridged between pins.  Solder flux is your friend.  Everything else is easy to install.
+
+### ALLPRO88 Connection
 
 Two footprints are provided for a female pin header connector for the connection to the ALLPRO88 motherboard.  One option is a TE Connectivity 532956-6.  This is not cheap, but matches the style of the connectors used on the other boards in the system.  An alternative footprint is available for a standard, cheaper, right-angle female header connector as you'd find when doing a search for such things.
+
+### USB Connection
+
+There are two options for the USB connection to the PCB:  a footprint for a USB connector, and a footprint for soldered-in USB cable.  This is not the connection that the cable from the host PC makes, this is for an internal connection within the ALLPRO88 from the interface board to a USB connector on the rear panel (and that's where the cable from the host connects to).  The directly-soldered-cable option is less likely to become a point of failure in the future, but it means the interface board cannot be removed from the chassis without unscrewing the USB connector plate from the rear panel.  That can become inconvenient.  I initially soldered a cable directly to the board, then later decided I preferred having a connector I can pull a cable out of.
+
+For the rear panel, I bought a USB 2.0 type B break-out board.  The shell of a USB 2.0 type B connector is almost exactly the height of the shell of the DB36 connector removed from the rear panel, and fits nicely into the space left by the connector.  I prefer the larger USB connectors, they're more resilient.  We're not sending this stupid thing into space, use a big connector.  To install it in the hole, I bought a piece of 90 degree aluminum angle extrusion at a local hobby shop.  I cut it to a suitable length with a hack saw, and then used a drill, a small file, and lots of patience to carve out holes and notches for the USB connector and its break-out board.  I reused the original screws from the DB36 connector to mount the aluminum angle into the ALLPRO88 case.
+
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_1.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_2.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_3.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_4.jpg)
+![Rear panel USB connector assembly detail](photos/rear_panel_usb_5.jpg)
+
+Just a little blue paint, and it would look like it was always that way.
+
+### Other Connections
+
+I2C and GPIO headers.  These can be left unpopulated.  It's hard to find connectors that fit into the pin pitch I chose.  That's my bad.  They're not used for anything, they're just there in case somebody wants to play with them in the future.  There are three spare GPIO lines on port D that get routed to J8, along with 3.3 V and GND.  The FX2's I2C clock and data lines, and 3.3 V and GND, are routed to J1.  The ALLPRO88's socket module connectors have many unused pins on them, and one could jumper these signals from the controller board to unused pins on the socket module connectors on the ALLPRO88's motherboard, thereby making them available to custom socket modules.  A little I2C display could be added to show status messages, for example.
 
 
 ## Smoke Test and Firmware Upload
