@@ -12,6 +12,8 @@ You can build your own easily with some pin header socket connectors, a protoboa
 
 What's here is the schematic of the circuit to build.  It's also a PCB layout that implements it.  If, instead of using this PCB, you go the route of using a USB logic analyzer board as-is, there is a small difference in the power management that needs to be considered, which will be mentioned below.
 
+For the firmware that goes with this controller, see https://github.com/cannon-zz/allpro88-fx2-soft.
+
 ## Circuit Description
 
 ### Overview
