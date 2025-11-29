@@ -2,11 +2,7 @@
 
 ## Overview
 
-Thanks to the skilled work of kevtris reverse engineering one of these units and his kind generous sharing of his documents (http://blog.kevtris.org/blogfiles/allpro88/), I was able to design and put together this controller to get my own unit going.
-
-kevtris, in addition to needing a control solution, also wasn't satisfied with the squealing power supplies, and so to solve all of the issues at once he devised a fancy card that replaces several of the power supplies and provides an FPGA-based custom CPU design for controlling the unit.
-
-The approach here is different.  This is only a controller, no power supplies are replaced, and the controller is a simple EZ-USB FX2LP based circuit.
+Thanks to the skilled work of kevtris reverse engineering one of these units and his kind generous sharing of his documents (http://blog.kevtris.org/blogfiles/allpro88/), I was able to design and put together this EZ-USB FX2LP based controller to get my own unit going.
 
 You can build your own easily with some pin header socket connectors, a protoboard, three resistors, and one of the "USB logic analyzer" boards you can find on AliExpress.  The "logic analyzer boards", as they're called, are actually just Cypress' FX2LP development board reference design.  The boards get shipped with a logic analyzer firmware which seems to have been ripped off some other product or another, but what's in the EEPROM is irrelevant, it gets replaced with this project's firmware.  Those boards are breakout boards providing access to all of the pins that are needed to implement this circuit.
 
