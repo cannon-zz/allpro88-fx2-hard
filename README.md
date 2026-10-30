@@ -10,6 +10,11 @@ What's here is the schematic of the circuit to build.  It's also a PCB layout th
 
 For the firmware that goes with this controller, see https://github.com/cannon-zz/allpro88-fx2-soft.
 
+For more information about the ALLPRO88 hardware, including repair tips for the channel driver boards and hybrids, and a kicad template to use as a starting point for custom socket modules, see
+- https://github.com/cannon-zz/allpro88-pin-driver
+- https://github.com/cannon-zz/allpro88-pin-driver-hybrid
+- https://github.com/cannon-zz/allpro88-socket-module
+
 ## Circuit Description
 
 ### Overview
